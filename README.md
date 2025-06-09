@@ -1,6 +1,6 @@
 usage:
 
---book chapter:verse__
+--book chapter:verse--
 
 not case sensitive, not space sensitive
 
