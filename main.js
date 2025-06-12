@@ -100,7 +100,8 @@ module.exports = class BibleInlinePlugin extends Plugin {
       return verses;
     }
 
-    const regex = /--([\dA-Za-z .]+?)\s+(\d+):(\d+)(?:-(\d+))?--/gi;
+    const regex = /--([\dA-Za-z .]+?)\s*(\d+):(\d+)(?:-(\d+))?--/gi;
+
 
     this.registerMarkdownPostProcessor((element, ctx) => {
       const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, null);

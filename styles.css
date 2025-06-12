@@ -1,8 +1,33 @@
-.bible-verse-quote {
-  border-left: 3px solid #888;
-  margin-left: 0;
-  padding-left: 10px;
-  font-style: italic;
-  color: #555;
+.markdown-preview-view blockquote.bible-verse-block,
+.markdown-source-view.mod-cm6 .bible-verse-block {
+  background-color: var(--blockquote-background, rgba(128, 128, 128, 0.1));
+  border-left: none;
+  border-radius: 0.5rem;
+  padding: 1em;
+  margin: 1em 0;
+  color: var(--text-normal);
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
+
+.bible-verse-block div {
+  margin-bottom: 0.25em;
+}
+
+
+.bible-verse-block sup {
+  font-size: 0.75em;
+  vertical-align: top;
+  margin-right: 0.25em;
+  opacity: 0.7;
+}
+
+
+.bible-verse-block footer {
+  text-align: right;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 0.75em;
+  color: var(--text-muted);
+}
